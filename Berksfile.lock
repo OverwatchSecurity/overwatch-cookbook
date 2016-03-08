@@ -1,0 +1,7 @@
+DEPENDENCIES
+  overwatch
+    path: .
+    metadata: true
+
+GRAPH
+  overwatch (0.1.0)
