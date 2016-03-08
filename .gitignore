@@ -1,1 +1,3 @@
 .ruby-version
+.kitchen/
+.kitchen.local.yml
