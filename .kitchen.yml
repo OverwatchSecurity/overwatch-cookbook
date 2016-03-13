@@ -6,10 +6,15 @@ provisioner:
   name: chef_zero
 
 platforms:
-  - name: ubuntu-14.04
-  - name: ubuntu-12.04
+- name: ubuntu-14.04
+  run_list:
+  - recipe[apt]
+- name: ubuntu-12.04
+  run_list:
+  - recipe[apt]
+  - recipe[build-essential]
 
 suites:
-  - name: default
-    run_list:
-      - recipe[overwatch::default]
+- name: install
+  run_list:
+  - recipe[test::install]
