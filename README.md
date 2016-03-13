@@ -1,4 +1,36 @@
-# overwatch-cookbook
+# Overwatch Cookbook
+
+Library cookbook that provides [custom resources](https://docs.chef.io/custom_resources.html) for use in recipes.
+
+## Cookbook Dependencies
+
+* [`compat_resource`](https://supermarket.chef.io/cookbooks/compat_resource)
+
+## Resources
+
+### `overwatch_install`
+
+Install Overwatch Agent and register server as Overwatch Device.
+
+#### Example
+
+```ruby
+overwatch_install 'my-overwatch-device' do
+  token 'my-overwatch-token'
+end
+```
+
+#### Properties
+
+* `token` (required): Token for your overwatch account.
+* `version`: Overwatch version to install.
+* `checksum`: SHA256 checksum of package for version.
+* `libnetfilter_queue_version`: Version of [`libnetfilter_queue`](http://www.netfilter.org/projects/libnetfilter_queue/) to install. Only applicable for Ubuntu 12.
+* `libnetfilter_queue_checksum`: SHA256 checksum of `libnetfilter_queue` source download for version.
+
+#### Actions
+
+* `:create`
 
 ## License
 
