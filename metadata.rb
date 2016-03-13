@@ -5,3 +5,7 @@ license          'Apache 2.0'
 description      'Installs/Configures overwatch'
 long_description 'Installs/Configures overwatch'
 version          '0.1.0'
+
+depends 'compat_resource', '~> 12.8.0'
+
+supports 'ubuntu'
