@@ -6,6 +6,9 @@ description      'Installs/Configures overwatch'
 long_description 'Installs/Configures overwatch'
 version          '0.1.1'
 
+source_url 'https://github.com/OverwatchSecurity/overwatch-cookbook'
+issues_url 'https://github.com/OverwatchSecurity/overwatch-cookbook/issues'
+
 depends 'compat_resource', '~> 12.8.0'
 
 supports 'ubuntu'
