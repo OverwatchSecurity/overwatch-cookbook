@@ -57,7 +57,7 @@ module OverwatchCookbook
 
       bash 'register-with-overwatch' do
         code <<-EOS
-          sudo overwatchd --register --token #{token} --name #{name} \
+          sudo overwatchd --register --token #{token} --name #{new_resource.name} \
             && sudo touch /var/lib/overwatch/.registered
         EOS
         not_if { File.exists?('/var/lib/overwatch/.registered') }
