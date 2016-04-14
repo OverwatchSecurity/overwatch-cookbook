@@ -7,9 +7,13 @@ provisioner:
 
 platforms:
 - name: ubuntu-14.04
+  driver:
+    box: ubuntu/trusty64
   run_list:
   - recipe[apt]
 - name: ubuntu-12.04
+  driver:
+    box: ubuntu/precise64
   run_list:
   - recipe[apt]
   - recipe[build-essential]
