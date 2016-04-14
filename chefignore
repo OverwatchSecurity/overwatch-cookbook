@@ -53,6 +53,8 @@ test/*
 features/*
 Guardfile
 Procfile
+.kitchen*
+Rakefile
 
 # SCM #
 #######
@@ -71,6 +73,8 @@ Procfile
 #############
 cookbooks/*
 tmp
+Berksfile
+Berksfile.lock
 
 # Cookbooks #
 #############
@@ -92,5 +96,3 @@ Vagrantfile
 # Travis #
 ##########
 .travis.yml
-
-.kitchen
