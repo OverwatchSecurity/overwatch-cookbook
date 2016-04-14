@@ -60,7 +60,7 @@ module OverwatchCookbook
           sudo overwatchd --register --token #{token} --name #{new_resource.name} \
             && sudo touch /var/lib/overwatch/.registered
         EOS
-        not_if { File.exists?('/var/lib/overwatch/.registered') }
+        not_if { ::File.exists?('/var/lib/overwatch/.registered') }
       end
 
       service 'overwatchd' do
