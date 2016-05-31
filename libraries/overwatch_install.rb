@@ -5,8 +5,8 @@ module OverwatchCookbook
 
     property :token, String, required: true
 
-    property :version, String, default: '0.2-3'
-    property :checksum, String, default: 'b7ea78b4a33a99f8c349726467a578cd28062cd8d5dfa835890fc028f7aae86d'
+    property :version, String, default: '0.2-6'
+    property :checksum, String, default: '39788d65681a1f931d19178ff60b20984baf012c81f324d638bfbaa74c5f988d'
 
     property :libnetfilter_queue_version, String, default: '1.0.0'
     property :libnetfilter_queue_checksum, String, default: '5215104241759505718f811f457729c21949a1872631fb2c0076a93fc00c0628'
