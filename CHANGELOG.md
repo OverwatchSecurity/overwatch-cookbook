@@ -1,3 +1,6 @@
+# v0.3.1 (2016-05-31)
+* Use stove for pushlishing versions.
+
 # v0.3.0 (2016-05-31)
 * Use version 0.2-6 as default.
 * Update `pkg_path` variable to use version attr.
