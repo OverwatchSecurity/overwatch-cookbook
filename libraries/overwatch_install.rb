@@ -53,6 +53,7 @@ module OverwatchCookbook
 
       dpkg_package 'overwatch' do
         source pkg_path
+        version new_resource.version
       end
 
       bash 'register-with-overwatch' do
