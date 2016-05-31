@@ -43,7 +43,7 @@ module OverwatchCookbook
 
       # Download and install Overwatch package
 
-      pkg_path = "#{Chef::Config[:file_cache_path]}/overwatchd-0.2-1_amd64.deb"
+      pkg_path = "#{Chef::Config[:file_cache_path]}/overwatchd-#{version}_amd64.deb"
       pkg_url = "http://packages.overwatchsec.com/ubuntu/overwatchd-#{version}_amd64.deb"
 
       remote_file pkg_path do
