@@ -4,7 +4,7 @@ maintainer_email 'trott@citrusbyte.com'
 license          'Apache 2.0'
 description      'Installs/Configures overwatch'
 long_description 'Installs/Configures overwatch'
-version          '0.3.1'
+version          '0.3.2'
 
 source_url 'https://github.com/OverwatchSecurity/overwatch-cookbook'
 issues_url 'https://github.com/OverwatchSecurity/overwatch-cookbook/issues'

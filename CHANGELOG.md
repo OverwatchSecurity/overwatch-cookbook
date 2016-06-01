@@ -1,3 +1,6 @@
+# v0.3.2 (2016-06-01)
+* Use version 0.2-7 as default.
+
 # v0.3.1 (2016-05-31)
 * Use stove for pushlishing versions.
 
